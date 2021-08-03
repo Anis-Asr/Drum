@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+
+body{
+    background:url(images/bg.jpg) no-repeat center;
+    text-align: center;
+    background-size: cover;    
+    height: 650px;
+}
+#title{
+    font-size: 60px;
+    font-weight: 700;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #5E4A43;  
+}
+
+.set {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin: 50px;
+    margin-bottom: 0px;
+
+}
+.set .details{
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    background: rgb(40, 119, 119);
+    color: floralwhite;
+    font-size: 22px;
+    border: 5px solid #005562;
+    outline: 0;
+    padding-top: 15px;
+    scale: 1;
+}
+
+.set .details .drum {
+    background: transparent;
+    color: floralwhite;
+    font-size: 35px;
+    border: transparent;
+    outline: 0;
+}
+
+.anim {
+    background: radial-gradient(#004D57, transparent) !important; 
+    box-shadow: 1px 1px 5px 10px #07092a;
+}
+
+footer{
+    padding-top: 180px;
+    color: #005562;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: right;
+    padding-right: 20px;
+}
+
+
+/* =============== responsive ================ */
+
+/* ================ responsive for extra small device ===================== */
+@media (min-width : 320px) and (max-width : 575px){
+   
+
+    #title {
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+    .set {
+        flex-wrap: wrap;
+        margin: 25px;
+    }
+
+    .set .details .drum {
+        opacity: 0.5;
+        font-size: 20px;
+        width: 110%;
+    }
+    .set .details {
+        height: 45px;
+        width: 75px;
+        padding: 10px;
+        margin: 5px 2px;
+        font-size: 18px;
+    }
+
+    footer {
+        padding-top: 20px;
+        font-size: 15px;
+    }
+}
+
+
+/* ================== responsive for small device========================= */
+@media (min-width : 576px) and (max-width : 767px){
+   
+    #title {
+        padding-top: 40px;
+        padding-bottom: 0;
+    }
+    .set {
+        flex-wrap: wrap;
+        margin: 50px;
+    }
+
+    .set .details .drum {
+        opacity: 0.5;
+        font-size: 20px;
+        width: 110%;
+    }
+    .set .details {
+        height: 45px;
+        width: 75px;
+        padding: 10px;
+        margin: 5px 2px;
+        font-size: 18px;
+    }
+
+    footer {
+        padding-top: 20px;
+        font-size: 15px;
+    }
+}
